@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'checkpoint_knocker'
+
+options = {
+	:host => ARGV[0],
+	:port => ARGV[1],
+	:user => ARGV[2],
+	:pass => ARGV[3]
+}
+
+CheckpointKnocker.knock(options)
