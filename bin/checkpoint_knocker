@@ -6,7 +6,7 @@ options = {
 	:host => ARGV[0],
 	:port => ARGV[1],
 	:user => ARGV[2],
-	:pass => ARGV[3]
+	:pass => STDIN.read.strip
 }
 
 CheckpointKnocker.knock(options)
